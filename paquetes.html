@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spatium Sitio Oficial | Paquetes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/x-icon" href="./icon.ico">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        agua: {
+                            50: '#fdf8f6',
+                            100: '#f2e8e5',
+                            200: '#eaddd7',
+                            300: '#e0cec7',
+                            400: '#d2bab0',
+                            500: '#bfa094',
+                            600: '#a18072',
+                            700: '#977669',
+                            800: '#846358',
+                            900: '#43302b',
+                        },
+                        space: {
+                            50: '#0A1126',
+                            100: '#121D40',
+                            200: '#6889A6',
+                            300: '#2F6C73',
+                            400: '#B3F2F2'
+                        }
+                    },
+                    backgroundImage: {
+                        'space': "url('/img/universe-5456206_1920.jpg')",
+                        'luna': "url('/img/luna.jpg')",
+                        'marte': "url('/img/marte.jpg')",
+                        'jupiter': "url('/img/jupiter.jpg')",
+                        'saturno': "url('/img/saturno.jpg')"
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-space-100 text-white">
+    <header>
+        <!-- Menú pantalla completa -->
+        <nav class="border-b-2 border-space-200 bg-gradient-to-r from-space-300 to-space-400 shadow-2xl shadow-cyan-500/50">
+            <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
+                <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img src="img/icons/icons8-rocket-launch-64(1).png" class="h-8" alt="Flowbite Logo" />
+                    <span
+                        class="drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Spa<span
+                            class="text-space-100 font-light">tium</span></span>
+                </a>
+                <div class="flex items-center max-sm:hidden">
+                    <ul
+                        class="flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+                        <li><a href="index.html" class="hover:underline">Inicio</a></li>
+    
+                        <li><a href="destinos.html" class="hover:underline">Destinos</a></li>
+    
+                        <li><a href="paquetes.html" class="hover:underline">Paquetes</a></li>
+    
+                        <li><a href="contacto.html" class="hover:underline">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Menú celular -->
+        <nav class="border-b-2 border-space-200 hidden max-sm:block bg-gradient-to-r from-space-50 to-space-200">
+            <div class="max-w-screen-xl px-4 py-3 mx-auto">
+                <div class="flex items-center">
+                    <ul class="flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm">
+                        <li><a href="index.html" class="hover:underline">Inicio</a></li>
+    
+                        <li><a href="destinos.html" class="hover:underline">Destinos</a></li>
+    
+                        <li><a href="paquetes.html" class="hover:underline">Paquetes</a></li>
+    
+                        <li><a href="contacto.html" class="hover:underline">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="h-1/2 text-center content-center py-8">
+        <h1 class="text-4xl font-bold">Paquetes recomendados por Spatium&#169;</h1>
+        <h2 class="text-2xl mt-4">Encontrá el paquete que mejor se adecúe a tus necesidades</h2>
+    </div>
+
+    <div class="flex flex-wrap justify-center gap-6 px-4 p-10 bg-space-50">
+        <!-- Paquete 1 -->
+            <div class="bg-white text-space-100 rounded-lg shadow-lg max-w-xs w-full overflow-hidden">
+                <a href="#">
+                    <div class="bg-cover bg-center h-48 bg-[url('./img/turismo-espacial1.png')]"></div>
+
+                    <div class="p-4 text-center">
+                        <h3 class="text-xl font-bold">Aventura en Marte</h3>
+                        <p class="mt-2 text-lg">7 noches - Abril</p>
+                        <p class="mt-2">Precio por persona de: <s>$250.000</s><strong class="text-xl">$120.000</strong></p>
+                        <div class="mt-4 text-left">
+                            <p class="font-bold">Incluye:</p>
+                            <ul class="list-disc pl-6">
+                                <li>Transporte espacial en nave semi-cama.</li>
+                                <li>Estadía en la colonia Ares Prime.</li>
+                                <li>Excursión guiada por el Valle de Marineris.</li>
+                                <li>Visita al Cráter Gale y la montaña Aeolis Mons.</li>
+                                <li>Actividades recreativas en gravedad reducida.</li>
+                            </ul>
+                        </div>
+                        <div class="mt-4 text-left">
+                            <p class="font-bold">Extras disponibles:</p>
+                            <ul class="list-disc pl-6">
+                                <li>Paseo en rover marciano.</li>
+                                <li>Tour nocturno para observar las lunas de Marte.</li>
+                                <li>Sesiones de entrenamiento para caminatas espaciales.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        <!-- Paquete 2 -->
+        <div class="bg-white text-space-100 rounded-lg shadow-lg max-w-xs w-full overflow-hidden">
+            <a href="#">
+                
+                <div class="bg-cover bg-center h-48 bg-[url('./img/turismo-jupiter.png')]"></div>
+                <div class="p-4 text-center">
+                    <h3 class="text-xl font-bold">Exploración en Titán</h3>
+                    <p class="mt-2 text-lg">10 noches - Junio</p>
+                    <p class="mt-2">Precio por persona de: <strong class="text-xl">$480.000</strong></p>
+                    <div class="mt-4 text-left">
+                        <p class="font-bold">Incluye:</p>
+                        <ul class="list-disc pl-6">
+                            <li>Transporte espacial en nave cama.</li>
+                            <li>Estadía en la base Titania.</li>
+                            <li>Excursión al Mar Metano de Kraken Mare.</li>
+                            <li>Visita a la Cordillera Doom Mons.</li>
+                            <li>Observación del ciclo atmosférico de Titán.</li>
+                        </ul>
+                    </div>
+                    <div class="mt-4 text-left">
+                        <p class="font-bold">Extras disponibles:</p>
+                        <ul class="list-disc pl-6">
+                            <li>Sobrevuelo de la luna Titán en globo aerostático.</li>
+                            <li>Visita a los lagos de hidrocarburos.</li>
+                            <li>Caminata bajo el cielo anaranjado de Titán.</li>
+                        </ul>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- Paquete 3 -->
+        <div class="bg-white text-space-100 rounded-lg shadow-lg max-w-xs w-full overflow-hidden">
+            <a href="#">
+                <div class="bg-cover bg-center h-48 bg-[url('./img/turismo-luna.png')]"> </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-xl font-bold">Descubriendo el famoso satélite Europa</h3>
+                    <p class="mt-2 text-lg">5 noches - Septiembre</p>
+                    <p class="mt-2">Precio por persona de: <s>$500.000</s> <strong class="text-xl">$399.000</strong></p>
+                    <div class="mt-4 text-left">
+                        <p class="font-bold">Incluye:</p>
+                        <ul class="list-disc pl-6">
+                            <li>Transporte espacial en nave semi-cama.</li>
+                            <li>Estadía en la base subglacial Glacius.</li>
+                            <li>Excursión al océano subterráneo de Europa.</li>
+                            <li>Observación del geyser de plumas de hielo.</li>
+                            <li>Actividades científicas y recreativas bajo el hielo.</li>
+                        </ul>
+                    </div>
+                    <div class="mt-4 text-left">
+                        <p class="font-bold">Extras disponibles:</p>
+                        <ul class="list-disc pl-6">
+                            <li>Exploración en submarino del océano.</li>
+                            <li>Visita a los polos de Europa.</li>
+                            <li>Observación de Júpiter y sus lunas desde la superficie.</li>
+                        </ul>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- Paquete 4 -->
+        <div class="bg-white text-space-100 rounded-lg shadow-lg max-w-xs w-full overflow-hidden">
+            <a href="#">
+                <div class="bg-cover bg-center h-48 bg-[url('./img/turismo-marte.png')]"></div>
+                <div class="p-4 text-center">
+                    <h3 class="text-xl font-bold">Explora Júpiter y sus hermosas Lunas Galileanas</h3>
+                    <p class="mt-2 text-lg"> 12 días - Enero</p>
+                    <p class="mt-2">Precio por persona de: <s>$420.000</s> <strong class="text-xl">$295.000</strong></p>
+                    <p class="font-bold mt-4 text-left">Incluye:</p>
+                    <ul class="list-disc pl-6 text-left">
+                        <li>Transporte de lujo en nave con asientos cama.</li>
+                        <li>Alojamiento en la colonia <strong>Europa Resort</strong>.</li>
+                        <li>Tours a las lunas Ío y Ganímedes con expertos en astrobiología.</li>
+                        <li>Cena especial bajo las vistas del Gran Torbellino de Júpiter.</li>
+                    </ul>
+                    <p class="font-bold mt-4 text-left">Extras disponibles:</p>
+                    <ul class="list-disc pl-6 text-left">
+                        <li>Submarinismo en los océanos subterráneos de Europa.</li>
+                        <li>Experiencia de observación astronómica en órbita de Júpiter.</li>
+                        <li>Tour privado de las bases científicas en Calisto.</li>
+                    </ul>
+                </div>
+            </a>
+        </div>
+        
+        <!-- Paquete 5 -->
+        <div class="bg-white text-space-100 rounded-lg shadow-lg max-w-xs w-full overflow-hidden">
+            <a href="#">
+                <div class="bg-cover bg-center h-48 bg-[url('./img/turismo-saturno.png')]"></div>
+                <div class="p-4 text-center">
+                    <h3 class="text-xl font-bold">Descubre Saturno y sus Anillos</h3>
+                    <p class="mt-2 text-lg"> 10 días - Diciembre</p>
+                    <p class="mt-2">Precio por persona de: <strong class="text-xl">$320.000</strong></p>
+                    <p class="font-bold mt-4 text-left">Incluye:</p>
+                    <ul class="list-disc pl-6 text-left">
+                        <li>Transporte en nave semi-cama con opciones de entretenimiento.</li>
+                        <li>Hospedaje en la estación espacial <strong>Titan Haven</strong>.</li>
+                        <li>Excursión a los géiseres de Encélado.</li>
+                        <li>Tour panorámico por los anillos de Saturno.</li>
+                    </ul>
+                
+                    <p class="font-bold mt-4 text-left">Extras disponibles:</p>
+                    <ul class="list-disc pl-6 text-left">
+                        <li>Sobrevuelo de los anillos con guía especializado.</li>
+                        <li>Actividades recreativas en los mares de metano de Titán.</li>
+                        <li>Talleres interactivos sobre la terraformación de lunas.</li>
+                    </ul>
+                    </ul>
+                </div>
+            </a>
+        </div>
+        
+        <!-- Paquete 6 -->
+        <div class="bg-white text-space-100 rounded-lg shadow-lg max-w-xs w-full overflow-hidden">
+            <a href="#">
+                <div class="bg-cover bg-center h-48 bg-[url('./img/turismo-cohete.png')]"></div>
+                <div class="p-4 text-center">
+                    <h3 class="text-xl font-bold">Exploración Interestelar: Próxima Centauri</h3>
+                    <p class="mt-2 text-lg">30 días - Abril</p>
+                    <p class="mt-2">Precio por persona de: <strong class="text-xl">$444.500</strong></p>
+                    <p class="font-bold mt-4 text-left">Incluye:</p>
+                    <ul class="list-disc pl-6 text-left">
+                        <li>Transporte interestelar con cabinas individuales en modo de hibernación.</li>
+                        <li>Alojamiento en la colonia <strong>New Horizons</strong> en Próxima b.</li>
+                        <li>Excursiones guiadas por los exoplanetas cercanos.</li>
+                        <li>Conferencias y actividades científicas durante el viaje.</li>
+                    </ul>
+                    <p class="font-bold mt-4 text-left">Extras disponibles:</p>
+                    <ul class="list-disc pl-6 text-left">
+                        <li>Simulaciones de terraformación.</li>
+                        <li>Entrenamiento de supervivencia en planetas de baja gravedad.</li>
+                        <li>Experiencias culinarias con alimentos sintetizados a partir de recursos locales.</li>
+                    </ul>
+                </div>
+            </a>
+        </div>
+        
+        <!-- Paquete 7 -->
+        <div class="bg-white text-space-100 rounded-lg shadow-lg max-w-xs w-full overflow-hidden">
+            <a href="#">
+                <div class="bg-cover bg-center h-48 bg-[url('./img/turismo-satelite.png')]"></div>
+                <div class="p-4 text-center">
+                    <h3 class="text-xl font-bold">Vacaciones en Venus</h3>
+                    <p class="mt-2 text-lg">5 días - Octubre</p>
+                    <p class="mt-2">Precio por persona de: <strong class="text-xl">$190.000</strong></p>
+                    <p class="font-bold mt-4 text-left">Incluye:</p>
+                    <ul class="list-disc pl-6 text-left">
+                        <li>Transporte en nave rápida suborbital con asientos semi-cama.</li>
+                        <li>Estadía en la base flotante <strong>Cloud City</strong>.</li>
+                        <li>Paseos en las nubes ácidas de Venus.</li>
+                        <li>Charlas sobre la futura colonización de Venus.</li>
+                    </ul>
+                    <p class="font-bold mt-4 text-left">Extras disponibles:</p>
+                    <ul class="list-disc pl-6 text-left">
+                        <li>Experiencia de observación de la atmósfera de Venus.</li>
+                        <li>Paseos en globo por la estratosfera de Venus.</li>
+                        <li>Cena exclusiva bajo las vistas de la estrella más cercana.</li>
+                    </ul>
+                </div>
+            </a>
+        </div>
+
+        <!-- Paquete 8 -->
+        <div class="bg-white text-space-100 rounded-lg shadow-lg max-w-xs w-full overflow-hidden">
+            <a href="#">
+                <div class="bg-cover bg-center h-48 bg-[url('./img/turismo-gente.png')]"></div>
+                <div class="p-4 text-center">
+                    <h3 class="text-xl font-bold">Acampando en el Halcón Milenario</h3>
+                    <p class="mt-2 text-lg">14 días - Febrero</p>
+                    <p class="mt-2">Precio por persona de: <strong class="text-xl">$1.500.000</strong></p>
+                    <p class="font-bold mt-4 text-left">Incluye:</p>
+                    <ul class="list-disc pl-6 text-left">
+                        <li>Replica exacta de la conocidísima nave de Las Guerras de las Galaxias.</li>
+                        <li>Equipo básico de acampado.</li>
+                        <li>Controles funcionales de la flota.</li>
+                    </ul>
+                    <p class="font-bold mt-4 text-left">Extras disponibles:</p>
+                    <ul class="list-disc pl-6 text-left">
+                        <li>Meet & Greet con George Lucas al terminar el desafío.</li>
+                        <li>Un pack de cuatro sables de luz.</li>
+                    </ul>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-space-100 text-white flex flex-col justify-between items-center p-4 text-sm">
+        <div class="text-center p-4">
+            <p>¿Alguna duda? <a href="contacto.html"
+                    class="mt-5 bg-space-200 hover:bg-space-300 text-white font-bold py-2 px-3 rounded-full transition duration-300 ease-in-out">Contáctanos</a>
+            </p>
+        </div>
+        <div class="text-center p-2"></div>
+        <p>© 2052 Spatium. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

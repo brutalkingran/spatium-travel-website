@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/x-icon" href="./icon.ico">
+    <title>Spatium Sitio Oficial | Contacto</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        agua: {
+                            50: '#fdf8f6',
+                            100: '#f2e8e5',
+                            200: '#eaddd7',
+                            300: '#e0cec7',
+                            400: '#d2bab0',
+                            500: '#bfa094',
+                            600: '#a18072',
+                            700: '#977669',
+                            800: '#846358',
+                            900: '#43302b',
+                        },
+                        space: {
+                            50: '#0A1126',
+                            100: '#121D40',
+                            200: '#6889A6',
+                            300: '#2F6C73',
+                            400: '#B3F2F2'
+                        }
+                    },
+                    backgroundImage: {
+                        'space': "url('/img/universe-5456206_1920.jpg')",
+                        'luna': "url('/img/luna.jpg')",
+                        'marte': "url('/img/marte.jpg')",
+                        'jupiter': "url('/img/jupiter.jpg')",
+                        'saturno': "url('/img/saturno.jpg')"
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-space-50 text-white font-sans font-thin">
+    <header>
+        <!-- Menú pantalla completa -->
+        <nav class="border-b-2 border-space-200 bg-gradient-to-r from-space-300 to-space-400 shadow-2xl shadow-cyan-500/50">
+            <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
+                <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img src="img/icons/icons8-rocket-launch-64(1).png" class="h-8" alt="Flowbite Logo" />
+                    <span
+                        class="drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Spa<span
+                            class="text-space-100 font-light">tium</span></span>
+                </a>
+                <div class="flex items-center max-sm:hidden">
+                    <ul
+                        class="flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+                        <li><a href="index.html" class="hover:underline">Inicio</a></li>
+
+                        <li><a href="destinos.html" class="hover:underline">Destinos</a></li>
+
+                        <li><a href="paquetes.html" class="hover:underline">Paquetes</a></li>
+
+                        <li><a href="contacto.html" class="hover:underline">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Menú celular -->
+        <nav class="border-b-2 border-space-200 hidden max-sm:block bg-gradient-to-r from-space-50 to-space-200">
+            <div class="max-w-screen-xl px-4 py-3 mx-auto">
+                <div class="flex items-center">
+                    <ul class="flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm">
+                        <li><a href="index.html" class="hover:underline">Inicio</a></li>
+
+                        <li><a href="destinos.html" class="hover:underline">Destinos</a></li>
+
+                        <li><a href="paquetes.html" class="hover:underline">Paquetes</a></li>
+
+                        <li><a href="contacto.html" class="hover:underline">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- CONTACTO FORMULARIO -->
+
+    <section id="contacto" class="max-w-4xl mx-auto mt-10 p-5 bg-white rounded-lg m-10">
+        <h2 class="text-2xl font-bold text-center text-black mb-6">Contacto</h2>
+        <form action="#" method="POST">
+            <!-- NOMBRE -->
+            <div class="mb-4">
+                <label for="nam" class="block text-black mb-2">Nombre completo:</label>
+                <input type="text" id="nam" name="nam" class="w-full px-3 py-2 border border-space-300 rounded-md text-black" required>
+            </div>
+            <!-- CORREO -->
+            <div class="mb-4">
+                <label for="em" class="block text-black mb-2">Correo electrónico:</label>
+                <input type="em" id="em" name="em" class="w-full px-3 py-2 border border-space-300 rounded-md text-black" required>
+            </div>
+            <!-- TEL -->
+            <div class="mb-4">
+                <label for="tel" class="block text-black mb-2">Teléfono:</label>
+                <input type="tel" id="tel" name="tel" class="w-full px-3 py-2 border border-space-300 rounded-md text-black" required>
+            </div>
+            <!-- MSJ -->
+            <div class="mb-4">
+                <label for="msj" class="block text-black mb-2">Mensaje:</label>
+                <textarea id="msj" name="msj" rows="5" class="w-full px-3 py-2 border border-space-300 rounded-md text-black" required></textarea>
+            </div>
+
+            <!-- BOTONES -->
+            <div class="flex justify-evenly mt-6">
+                <button type="submit" class="px-6 py-2 bg-space-400 text-space-100 font-bold rounded-lg hover:bg-space-200 hover:text-white transition duration-300">
+                    Enviar
+                </button>
+                <button type="reset" class="px-6 py-2 bg-space-300 text-white font-bold rounded-lg hover:bg-space-100 transition duration-300">
+                    Borrar
+                </button>
+            </div>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="text-white flex flex-col justify-between items-center p-4 text-sm">
+        <p>© 2052 Spatium. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

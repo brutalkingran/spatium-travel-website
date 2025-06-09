@@ -1,0 +1,225 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/x-icon" href="./icon.ico">
+    <title>Spatium Sitio Oficial | Destinos</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        agua: {
+                            50: '#fdf8f6',
+                            100: '#f2e8e5',
+                            200: '#eaddd7',
+                            300: '#e0cec7',
+                            400: '#d2bab0',
+                            500: '#bfa094',
+                            600: '#a18072',
+                            700: '#977669',
+                            800: '#846358',
+                            900: '#43302b',
+                        },
+                        space: {
+                            50: '#0A1126',
+                            100: '#121D40',
+                            200: '#6889A6',
+                            300: '#2F6C73',
+                            400: '#B3F2F2'
+                        }
+                    },
+                    backgroundImage: {
+                        'space': "url('/img/universe-5456206_1920.jpg')",
+                        'luna': "url('/img/luna.jpg')",
+                        'marte': "url('/img/marte.jpg')",
+                        'jupiter': "url('/img/jupiter.jpg')",
+                        'saturno': "url('/img/saturno.jpg')"
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-space-50 text-white font-sans font-thin">
+    <header>
+        <!-- Menú pantalla completa -->
+        <nav class="border-b-2 border-space-200 bg-gradient-to-r from-space-300 to-space-400 shadow-2xl shadow-cyan-500/50">
+            <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
+                <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img src="img/icons/icons8-rocket-launch-64(1).png" class="h-8" alt="Flowbite Logo" />
+                    <span
+                        class="drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Spa<span
+                            class="text-space-100 font-light">tium</span></span>
+                </a>
+                <div class="flex items-center max-sm:hidden">
+                    <ul
+                        class="flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+                        <li><a href="index.html" class="hover:underline">Inicio</a></li>
+    
+                        <li><a href="destinos.html" class="hover:underline">Destinos</a></li>
+    
+                        <li><a href="paquetes.html" class="hover:underline">Paquetes</a></li>
+    
+                        <li><a href="contacto.html" class="hover:underline">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Menú celular -->
+        <nav class="border-b-2 border-space-200 hidden max-sm:block bg-gradient-to-r from-space-50 to-space-200">
+            <div class="max-w-screen-xl px-4 py-3 mx-auto">
+                <div class="flex items-center">
+                    <ul class="flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm">
+                        <li><a href="index.html" class="hover:underline">Inicio</a></li>
+    
+                        <li><a href="destinos.html" class="hover:underline">Destinos</a></li>
+    
+                        <li><a href="paquetes.html" class="hover:underline">Paquetes</a></li>
+    
+                        <li><a href="contacto.html" class="hover:underline">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="h-3/4 text-center content-center py-48">
+        <h1 class="text-4xl font-bold">Destinos disponibles gracias a Spatium&#169;</h1>
+        <h2 class="text-2xl mt-4">Encontrá el que más se adecúe a tu instinto aventurero</h2>
+    </div>
+
+    <section id="grid_destinos">
+        <!-- Grid de Destinos -->
+        <div class="grid grid-cols-1 md:grid-cols-3 grid-rows-3 gap-4 p-8 h-screen text-3xl">
+            <div
+                class="bg-[url('./img/destino-aboaoqu.png')] bg-cover bg-top grid-cell bg-opacity-75 flex items-center justify-center  font-bold rounded-lg overflow-hidden max-sm:text-lg">
+                A Baoa Qu
+            </div>
+        
+            <div
+                class="bg-[url('./img/destino-axis.png')] bg-cover bg-left large-cell row-span-2  bg-opacity-75 flex items-center justify-center font-bold rounded-lg overflow-hidden max-sm:text-lg max-sm:col-span-1 p-16">
+                Axis
+            </div>
+        
+            <div
+                class="bg-[url('./img/destino-colonia.png')] bg-cover bg-right grid-cell bg-opacity-75 flex items-center justify-center font-bold rounded-lg overflow-hidden max-sm:text-lg">
+                Colonia AB-X
+            </div>
+        
+            <div
+                class="bg-[url('./img/destino-marte.png')] bg-cover bg-right grid-cell bg-opacity-75 flex items-center justify-center font-bold rounded-lg overflow-hidden max-sm:text-lg">
+                Marte
+            </div>
+        
+            <div
+                class="bg-[url('./img/destino-marte2.png')] bg-cover bg-right grid-cell bg-opacity-75 flex items-center justify-center font-bold rounded-lg overflow-hidden max-sm:text-lg">
+                Jupiter
+            </div>
+        
+            <div
+                class="bg-[url('./img/destino-paisaje-nieve.png')] bg-cover bg-right large-cell row-span-1 max-sm:col-span-2 max-sm:row-span-10 bg-opacity-75 flex items-center justify-center font-bold rounded-lg overflow-hidden max-sm:text-lg">
+                Colonia ZZ
+            </div>
+        
+            <div
+                class="bg-[url('./img/destino-paisaje.png')] bg-cover bg-right grid-cell col-span-2 bg-opacity-75 max-sm:row-span-10 flex items-center justify-center font-bold rounded-lg overflow-hidden max-sm:text-lg">
+                Plutón
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-screen-xl mx-auto mb-10">
+        <div class="text-white">
+            <h2 class="text-2xl font-bold text-white py-2 px-4 rounded-lg inline-block mb-2">Júpiter</h2>
+            <div class="bg-space-100 py-4 px-6 rounded-lg">
+                <ul class="list-none space-y-2">
+                    <li><span class="text-space-400 font-semibold text-xl">#</span> Europa</li>
+                    <li><span class="text-space-400 font-semibold text-xl">#</span> Ganímedes</li>
+                    <li><span class="text-space-400 font-semibold text-xl">#</span> Ío</li>
+                    <li><span class="text-space-400 font-semibold text-xl">#</span> Calisto</li>
+                    <li><span class="text-space-400 font-semibold text-xl">#</span> Metis</li>
+                </ul>
+            </div>
+        </div>
+        
+        <hr class="m-8">
+
+        <div class="text-white">
+            <h2 class="text-2xl font-bold text-white py-2 px-4 rounded-lg inline-block mb-2">Saturno</h2>
+            <div class="bg-space-100 py-4 px-6 rounded-lg">
+                <ul class="list-none space-y-2">
+                    <li><span class="text-space-400 font-semibold text-xl">#</span> Titán</li>
+                    <li><span class="text-space-400 font-semibold text-xl">#</span> Encelado</li>
+                    <li><span class="text-space-400 font-semibold text-xl">#</span> Dione</li>
+                    <li><span class="text-space-400 font-semibold text-xl">#</span> Rea</li>
+                    <li><span class="text-space-400 font-semibold text-xl">#</span> Mimas</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr class="m-8">
+
+        <div class="text-white">
+            <h2 class="text-2xl font-bold text-white py-2 px-4 rounded-lg inline-block mb-2">Marte</h2>
+            <div class="bg-space-100 py-4 px-6 rounded-lg">
+                <ul class="list-none space-y-2">
+                    <li><span class="text-space-400 font-semibold text-xl">#</span> Olympus Mons</li>
+                    <li><span class="text-space-400 font-semibold text-xl">#</span> Valles Marineris</li>
+                    <li><span class="text-space-400 font-semibold text-xl">#</span> Phobos</li>
+                    <li><span class="text-space-400 font-semibold text-xl">#</span> Deimos</li>
+                    <li><span class="text-space-400 font-semibold text-xl">#</span> Terra Cimmeria</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr class="m-8">
+
+        <div class="text-white">
+            <h2 class="text-2xl font-bold text-white py-2 px-4 rounded-lg inline-block mb-2">Neptuno</h2>
+            <div class="bg-space-100 py-4 px-6 rounded-lg">
+                <ul class="list-none space-y-2">
+                    <li><span class="text-space-400 font-semibold text-xl">#</span> Tritón</li>
+                    <li><span class="text-space-400 font-semibold text-xl">#</span> Nereida</li>
+                    <li><span class="text-space-400 font-semibold text-xl">#</span> Proteo</li>
+                    <li><span class="text-space-400 font-semibold text-xl">#</span> Larisa</li>
+                    <li><span class="text-space-400 font-semibold text-xl">#</span> Despina</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr class="m-8">
+        
+        <div class="text-white">
+            <h2 class="text-2xl font-bold text-white py-2 px-4 rounded-lg inline-block mb-2">Mercurio</h2>
+            <div class="bg-space-100 py-4 px-6 rounded-lg">
+                <ul class="list-none space-y-2">
+                    <li><span class="text-space-400 font-semibold text-xl">#</span> Caloris Montes</li>
+                    <li><span class="text-space-400 font-semibold text-xl">#</span> Tolstoj</li>
+                    <li><span class="text-space-400 font-semibold text-xl">#</span> Kuiper</li>
+                    <li><span class="text-space-400 font-semibold text-xl">#</span> Mozart</li>
+                    <li><span class="text-space-400 font-semibold text-xl">#</span> Sobkou Planitia</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-space-100 text-white flex flex-col justify-between items-center p-4 text-sm">
+        <div class="text-center p-4">
+            <p>¿Alguna duda? <a href="contacto.html"
+                    class="mt-5 bg-space-200 hover:bg-space-300 text-white font-bold py-2 px-3 rounded-full transition duration-300 ease-in-out">Contáctanos</a>
+            </p>
+        </div>
+        <div class="text-center p-2"></div>
+        <p>© 2052 Spatium. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
